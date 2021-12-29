@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<odoo>
+
+#property action
+    <record id="real_estate_tag_action" model="ir.actions.act_window">
+        <field name="name">Property Tags</field>
+        <field name="res_model">estate.property.tag</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    #menu
+    <menuitem id="real_estate_property_tags"
+              name="Property Tags"
+              parent="real_estate_settings"
+              action="real_estate_tag_action"
+              sequence="2"/>
+</odoo>

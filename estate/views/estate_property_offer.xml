@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<odoo>
+    #views
+    #list
+    <record id="real_estate_offer_tree" model="ir.ui.view">
+        <field name="name">real.estate.offer.tree</field>
+        <field name="model">estate.property.offer</field>
+        <field name="arch" type="xml">
+            <tree string="Real Estate Offer">
+                    <field name="price"/>
+                    <field name="partner_id"/>
+                    <field name="status"/>
+                    <field name="validity"/>
+                    <field name="date_deadline"/>
+            </tree>
+        </field>
+    </record>
+    #form
+    <record id="real_estate_offer_form" model="ir.ui.view">
+        <field name="name">real.estate.offer.form</field>
+        <field name="model">estate.property.offer</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="price"/>
+                        <field name="partner_id"/>
+                        <field name="status"/>
+                        <field name="validity"/>
+                        <field name="date_deadline"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+
+
+
+
+</odoo>
