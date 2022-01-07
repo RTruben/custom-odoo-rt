@@ -2,11 +2,22 @@
 
 <odoo>
 
-#property action
+    #property action
     <record id="real_estate_tag_action" model="ir.actions.act_window">
         <field name="name">Property Tags</field>
         <field name="res_model">estate.property.tag</field>
         <field name="view_mode">tree,form</field>
+    </record>
+
+    #list
+    <record id="real_estate_tag_tree" model="ir.ui.view">
+        <field name="name">real.estate.tag.tree</field>
+        <field name="model">estate.property.tag</field>
+        <field name="arch" type="xml">
+            <tree string="Property Tags" editable="top">
+                <field name="name"/>
+            </tree>
+        </field>
     </record>
 
     #menu
